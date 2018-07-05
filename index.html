@@ -68,21 +68,6 @@
 		</div>
 	</header>
 
-	<!-- HEADER FOR BIG SCREEN -->
-	<nav class="navbar navbar-desktop navbar-toggleable-md hidden-md-down ">
-		<div class="container">
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			<div class="navbar-nav">
-			<a class="nav-item nav-link active" href="#home">الرئيسية <span class="sr-only">(current)</span></a>
-			<a class="nav-item nav-link" href="#portfolio">المنتجات</a>
-			<a class="nav-item nav-link" href="#whatwedo">لماذا تشتري؟</a>
-			<a class="nav-item nav-link" href="#about">من نحن</a>
-			<a class="nav-item nav-link" href="#contact">راسلنا</a>
-			</div>
-		</div>
-		</div>
-	</nav>
-
 	<!-- Fixed Header -->
 	<header class="fixed fixed-top hidden-lg-up">
         <div class="nav-icon">
@@ -108,10 +93,40 @@
 		</div>
 	</div>
 
+	<!-- HEADER FOR BIG SCREEN -->
+	<nav class="navbar navbar-desktop navbar-toggleable-md hidden-md-down ">
+		<div class="container">
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+			<a class="nav-item nav-link active" href="#home">الرئيسية <span class="sr-only">(current)</span></a>
+			<a class="nav-item nav-link" href="#portfolio">المنتجات</a>
+			<a class="nav-item nav-link" href="#whatwedo">لماذا تشتري؟</a>
+			<a class="nav-item nav-link" href="#about">من نحن</a>
+			<a class="nav-item nav-link" href="#contact">راسلنا</a>
+			</div>
+		</div>
+		</div>
+	</nav>
+
+	<!-- HEADER Fixed FOR BIG SCREEN -->
+	<nav class="navbar navbar-desktop navbar-toggleable-md hidden-md-down fixed fixed-top">
+		<div class="container">
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+			<a class="nav-item nav-link active" href="#home">الرئيسية <span class="sr-only">(current)</span></a>
+			<a class="nav-item nav-link" href="#portfolio">المنتجات</a>
+			<a class="nav-item nav-link" href="#whatwedo">لماذا تشتري؟</a>
+			<a class="nav-item nav-link" href="#about">من نحن</a>
+			<a class="nav-item nav-link" href="#contact">راسلنا</a>
+			</div>
+		</div>
+		</div>
+	</nav>
+
 	<!-- HOME -->
 	<section id="home" class="home">
 		<div class="home-content">
-            <h1 class="bottom_90">منتجات مميزة</h1>
+			<h1 class="bottom_90">منتجات<span class="element" data-text1="مميزة" data-text2="مميزة" data-text3="مميزة" data-loop="true" data-backdelay="3000"></span></h1>
 				<p class="top_30">اتجه نحو الابداع بخطوات واثقة</p>
 				<p class="top_30">اتجه نحو الابداع بخطوات واثقة</p>
 		</div>
@@ -178,7 +193,7 @@
 			</section>
 
 	<!-- ABOUT SECTION -->
-	<section class="about white-bg padbot_120" id="about">
+	<section class="about white-bg" id="about">
 		<div class="container">
 			<div class="section-title bottom_15">
 				<h2 class="title">من نحن</h2>
@@ -205,16 +220,19 @@ I ought to just try that witht my boss; I'd get kicked out on the spot. But who 
 				</div>
 				
 		        <!-- Contact Form -->
-		        <form class="contact-form top_60" method="POST">
+		        <form class="contact-form top_60" method="POST" style="direction: rtl">
                     <div class="row">
-						 <!--Email-->
-						<div class="col-md-6">
-							<input id="con_email" name="con_email" class="form-inp requie" type="text" placeholder="البريد الالكتروني">
-						</div>
+						
                         <!--Name-->
                         <div class="col-md-6">
                             <input id="con_name" name="con_name" class="form-inp requie" type="text" placeholder="الاسم">
-                        </div>
+						</div>
+
+						 <!--Email-->
+						 <div class="col-md-6">
+							<input id="con_email" name="con_email" class="form-inp requie" type="text" placeholder="البريد الالكتروني">
+						</div>
+
                         <div class="col-md-12">
                             <!--Message-->
                             <textarea name="con_message" id="con_message" class="requie" placeholder="الرسالة" rows="8"></textarea>

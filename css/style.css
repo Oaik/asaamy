@@ -207,6 +207,7 @@ p{
 
 .popup .form-rtl {
     direction: rtl;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .popup p {
@@ -236,7 +237,8 @@ p{
 	background-color: #1f1f1f;
 	border: #999;
 	cursor: pointer;
-	margin-top: 15px
+    margin-top: 15px;
+    font-family: 'Tajawal', sans-serif;
 }
 
 @media screen and (max-width: 700px){
@@ -324,7 +326,7 @@ header .logo{
 
 .right-inner {
     display: table-cell;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
     text-align: left;
 }
 
@@ -416,9 +418,14 @@ header .logo{
     z-index: 5
 }
 
+.navbar-desktop.fixed {
+    z-index: 1;
+    opacity: 0.7;
+}
+
 .navbar.navbar-desktop a {
     color: #FFF;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -614,12 +621,19 @@ section{
 .portfolio .container-fluid {
     width: 100%;
 }
+
 .portfolio img {
 	max-width: 360px;
-	max-height: 300px;
+	height: 300px;
 	flex-grow: 1;
 	flex-shrink: 1;
 	margin: 10px auto;
+}
+
+@media (min-width: 992px) { 
+    .portfolio img {
+        width: 50%;
+    }
 }
 
 @media (min-width: 1200px){
@@ -634,7 +648,7 @@ section{
 
 .section-title{
     text-align: center;
-    padding: 120px 0 60px 0;
+    padding: 60px 0 60px 0;
     position: relative;
 }
 
@@ -674,6 +688,11 @@ section{
     color: #748182;
 }
 
+@media (max-width: 768px) { 
+    .about .text {
+        margin-top: 10px
+    }
+}
 
 /*------------------------ 5 WHAT WE DO SECTION ------------------------*/
 
