@@ -25,7 +25,7 @@
 
 
 body{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 }
 
 p{
@@ -144,15 +144,16 @@ p{
     background: #000;
     display: inline-block;
     color: #fff !important;
-    padding:12px 40px;
+    padding:12px 90px;
     font-size: 13px;
     cursor: pointer;
     transition: padding ease 0.3s;
     -webkit-transition: padding ease 0.3s;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .site-btn:hover{
-    padding:12px 50px;
+    padding:12px 100px;
     transition: padding ease 0.3s;
     -webkit-transition: padding ease 0.3s;
 }
@@ -161,14 +162,15 @@ p{
 /*------------------------ 2 HEADER & FULL MENU ------------------------*/
 
 .overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-	z-index: 50
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 500ms;
+    z-index: 50;
+    display: none
 }
 .overlay:target {
   visibility: visible;
@@ -177,10 +179,10 @@ p{
 
 .popup {
   margin: 70px auto;
-  padding: 20px;
+  padding: 40px 20px;
   background: #fff;
   border-radius: 5px;
-  width: 50%;
+  width: 500px;
   position: relative;
   transition: all 5s ease-in-out;
 }
@@ -192,11 +194,19 @@ p{
   font-family: Tahoma, Arial, sans-serif;
 }
 
+.popup h2 span {
+    font-weight: bold;
+}
+
 .popup h3 {
 	font-size: 2.3em;
 	color: #837978;
 	font-weight: 400;
 	margin-bottom: 20px
+}
+
+.popup .form-rtl {
+    direction: rtl;
 }
 
 .popup p {
@@ -206,8 +216,8 @@ p{
 
 .popup .close {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 16px;
+  right: 17px;
   transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
@@ -407,8 +417,14 @@ header .logo{
 }
 
 .navbar.navbar-desktop a {
-    color: #FFF !important;
-    font-size: 26px
+    color: #FFF;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.navbar.navbar-desktop a:hover {
+    color: #333;
+    -webkit-transition: all ease 0.3s;
 }
 /*------------------------ 3 HOME SECTION ------------------------*/
 
@@ -595,7 +611,9 @@ section{
 }
 
 /*------------------------ 4 PORTFOLIO SECTION ------------------------*/
-
+.portfolio .container-fluid {
+    width: 100%;
+}
 .portfolio img {
 	max-width: 360px;
 	max-height: 300px;
@@ -621,7 +639,6 @@ section{
 }
 
 .section-title .title{
-   font-family: 'BebasNeueRegular';
    font-weight: normal;
    font-style: normal;
    font-size: 40px;
@@ -884,10 +901,10 @@ section{
     border: 0;
     color: #000;
     border-bottom: solid 1px #dfdfdf;
-    font-size: 13px;
+    font-size: 20px;
     padding-left: 10px;
     margin-bottom: 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     text-align: right
 }
 
@@ -895,12 +912,21 @@ section{
     width: 100%;
     border: 0;
     border-bottom: solid 1px #dfdfdf;
-    font-size: 13px;
+    font-size: 20px;
     padding: 20px 0 0 10px;
     height: 119px;
     margin-bottom: 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Tajawal', sans-serif; 
     text-align: right
+}
+
+.contact-form input[type=text]::placeholder,
+.contact-form input[type=email]::placeholder,
+.contact-form textarea::placeholder {
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 0.3
 }
 
 footer{

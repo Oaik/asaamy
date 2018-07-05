@@ -1,6 +1,14 @@
 'use strict'; 
-$(document).ready( function() {	
+function checkForChanges() {
+    if ($('.loader-wrapper').hasClass('faded-out'))
+        $('.overlay').slideDown("slow");
+    else
+        setTimeout(checkForChanges, 500);
+    }
 
+$(document).ready( function() {	
+    //Show popup After loader
+    checkForChanges();
     //PRELOADER
         /** Loader */
     var loader = $(".loader");
@@ -31,7 +39,7 @@ $(document).ready( function() {
     }
 
     setTimeout(function() {
-        $(".loader-wrapper").fadeOut('fast');
+        $(".loader-wrapper").fadeOut('fast').addClass("faded-out");
         (loader).fadeOut('fast');
     }, 3500);
 
@@ -155,6 +163,6 @@ $(document).ready( function() {
         fixedContentPos: false
     });
 
-
+    
 
 }); // document load end 
