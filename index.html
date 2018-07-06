@@ -38,7 +38,7 @@
 	</div>
 
 	<!-- POP UP -->
-	<div id="popup1" class="overlay">
+	<div id="popup1" class="overlay hide-popup">
 	<div class="popup text-center">
 		<br>
 		<h2>خصم يصل لغاية <span>%60</span></h2>
@@ -46,7 +46,7 @@
 		<p>سنرسل لك علي بريدك الالكتروني نخبرك فيه باليوم الذي سنعلن عن الخصم الكبير</p>
 		<br>
 		<h3>اقتنص الفرصة الان</h3>
-		<a class="close" href="#" onclick='document.getElementById("popup1").style.display = "none";document.getElementById("popup1").style.zIndex = 1'>&times;</a>
+		<a class="close" href="#">&times;</a>
 		<div class="content">
 			<br>
 			<form class="" action="" method="">
@@ -61,6 +61,7 @@
 
 	<!-- HEADER -->
 	<header class="hidden-lg-up">
+		<a href="#popup1">تبحث عن خصم؟</a>
         <div class="nav-icon hidden-lg-up">
 		  <span></span>
 		  <span></span>
@@ -70,6 +71,7 @@
 
 	<!-- Fixed Header -->
 	<header class="fixed fixed-top hidden-lg-up">
+		<a href="#popup1">تبحث عن خصم؟</a>
         <div class="nav-icon">
 		  <span></span>
 		  <span></span>
@@ -96,14 +98,15 @@
 	<!-- HEADER FOR BIG SCREEN -->
 	<nav class="navbar navbar-desktop navbar-toggleable-md hidden-md-down ">
 		<div class="container">
+			<a href="#popup1" class="offer">تبحث عن خصم؟</a>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			<div class="navbar-nav">
-			<a class="nav-item nav-link active" href="#home">الرئيسية <span class="sr-only">(current)</span></a>
-			<a class="nav-item nav-link" href="#portfolio">المنتجات</a>
-			<a class="nav-item nav-link" href="#whatwedo">لماذا تشتري؟</a>
-			<a class="nav-item nav-link" href="#about">من نحن</a>
-			<a class="nav-item nav-link" href="#contact">راسلنا</a>
-			</div>
+				<div class="navbar-nav">
+					<a class="nav-item nav-link active" href="#home">الرئيسية <span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="#portfolio">المنتجات</a>
+					<a class="nav-item nav-link" href="#whatwedo">لماذا تشتري؟</a>
+					<a class="nav-item nav-link" href="#about">من نحن</a>
+					<a class="nav-item nav-link" href="#contact">راسلنا</a>
+				</div>
 		</div>
 		</div>
 	</nav>
@@ -111,14 +114,15 @@
 	<!-- HEADER Fixed FOR BIG SCREEN -->
 	<nav class="navbar navbar-desktop navbar-toggleable-md hidden-md-down fixed fixed-top">
 		<div class="container">
+			<a href="#popup1" class="offer">تبحث عن خصم؟</a>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			<div class="navbar-nav">
-			<a class="nav-item nav-link active" href="#home">الرئيسية <span class="sr-only">(current)</span></a>
-			<a class="nav-item nav-link" href="#portfolio">المنتجات</a>
-			<a class="nav-item nav-link" href="#whatwedo">لماذا تشتري؟</a>
-			<a class="nav-item nav-link" href="#about">من نحن</a>
-			<a class="nav-item nav-link" href="#contact">راسلنا</a>
-			</div>
+				<div class="navbar-nav">
+					<a class="nav-item nav-link active" href="#home">الرئيسية <span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="#portfolio">المنتجات</a>
+					<a class="nav-item nav-link" href="#whatwedo">لماذا تشتري؟</a>
+					<a class="nav-item nav-link" href="#about">من نحن</a>
+					<a class="nav-item nav-link" href="#contact">راسلنا</a>
+				</div>
 		</div>
 		</div>
 	</nav>
@@ -126,7 +130,7 @@
 	<!-- HOME -->
 	<section id="home" class="home">
 		<div class="home-content">
-			<h1 class="bottom_90">منتجات<span class="element" data-text1="مميزة" data-text2="مميزة" data-text3="مميزة" data-loop="true" data-backdelay="3000"></span></h1>
+			<h1 class="bottom_90">منتجات<span class="element" data-text1="مميزة" data-text2="جديدة" data-text3="جميلة" data-loop="true" data-backdelay="3000"></span></h1>
 				<p class="top_30">اتجه نحو الابداع بخطوات واثقة</p>
 				<p class="top_30">اتجه نحو الابداع بخطوات واثقة</p>
 		</div>
@@ -139,12 +143,21 @@
 		<section class="portfolio white-bg d-flex " id="portfolio">
 			<div class="container-fluid">
 				<div class="row">
-					<img src="images/work-1.jpg" class="img-fluid" alt="Responsive image">
-					<img src="images/work-1.jpg" class="img-fluid" alt="Responsive image">
-					<img src="images/work-1.jpg" class="img-fluid" alt="Responsive image">
-
-					<img src="images/work-1.jpg" class="img-fluid" alt="Responsive image">
-					<img src="images/work-1.jpg" class="img-fluid" alt="Responsive image">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 xl-screen-img">
+						<img src="images/work-1.jpg" class="img-fluid" alt="Responsive image">
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 xl-screen-img">
+						<img src="images/work-1.jpg" class="img-fluid" alt="Responsive image">
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 xl-screen-img">
+						<img src="images/work-1.jpg" class="img-fluid" alt="Responsive image">
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 xl-screen-img">
+						<img src="images/work-1.jpg" class="img-fluid" alt="Responsive image">
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 xl-screen-img">
+						<img src="images/work-1.jpg" class="img-fluid" alt="Responsive image">
+					</div>
 				</div>
 
 			</div>

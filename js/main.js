@@ -1,15 +1,14 @@
 'use strict'; 
 // Check if the loader has disappear
-function checkForChanges() {
-    if ($('.loader-wrapper').hasClass('faded-out'))
-        $('.overlay').slideDown("slow");
-    else
-        setTimeout(checkForChanges, 500);
-    }
+
 
 $(document).ready( function() {	
-    //Show popup After loader
-    checkForChanges();
+    $(".close").on("click", function() {
+        $("#popup1").addClass("hide-popup");
+    });
+    $(".offer").on("click", function() {
+        $("#popup1").removeClass("hide-popup");
+    });
     //PRELOADER
         /** Loader */
     var loader = $(".loader");
@@ -200,5 +199,23 @@ $(document).ready( function() {
         }
     }
     });
+
+    // Scroll in big screen
+    function onScroll(event){
+        if ($('#home').length) {     
+        var scrollPos = $(document).scrollTop();
+        $('nav .navbar-nav a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('nav .navbar-nav a').removeClass("active");
+                currLink.addClass("active");
+            }
+            else{
+                currLink.removeClass("active");
+            }
+            });
+        }              
+    }
 
 }); // document load end 
