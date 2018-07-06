@@ -1,13 +1,22 @@
 'use strict'; 
-// Check if the loader has disappear
-
 
 $(document).ready( function() {	
+    // Pop Up
     $(".close").on("click", function() {
         $("#popup1").addClass("hide-popup");
     });
     $(".offer").on("click", function() {
         $("#popup1").removeClass("hide-popup");
+    });
+
+    // Form Validate
+    $("input").on("blur", function() {
+        if ($(this).val() == "") {
+            $(this).css("border", "1px solid red");
+        } else {
+            $(this).css("border", "0");
+            $(this).css('border-bottom', 'solid 1px #dfdfdf');
+        }
     });
     //PRELOADER
         /** Loader */
